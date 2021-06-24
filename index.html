@@ -11,9 +11,11 @@
 <body>
 
     <div id="app">
-        <input v-model= "text" placeholder = "scrivi del testo">
+        <input v-model= "text" placeholder = "scrivi il tuo messaggio">
         <h1 :class="color">{{ text }}</h1>
-        <button @click= "visualizza">Change color</button>
+        <button @click= "visualizzaColore">Change color</button>
+        <img :src="immagine" alt="vueimg.png" :class="imageNo">
+        <button @click= "visualizzaImmagine">{{ buttonImageText }}</button>
     </div>
 
     <script type="text/javascript" src="./js/script.js"></script>

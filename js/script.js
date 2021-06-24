@@ -9,15 +9,30 @@ const app = new Vue (
             text: '',
             color: "textNoColor",
             buttonColor: "textWithColor",
+            immagine: "./img/vueimg.png",
+            imageNo: "immagineNonVisibile",
+            buttonImage: "imageYes",
+            buttonImageText: "View Image",
         },
         methods: {
-            visualizza: function() {
+            visualizzaColore: function() {
                 if (this.color === "textNoColor") {
                     this.buttonColor = "textWithColor";
                     this.color = "textWithColor";
                 } else {
                     this.buttonColor = "textWithColor";
                     this.color = "textNoColor";
+                }
+            },
+            visualizzaImmagine: function() {
+                if (this.imageNo === "immagineNonVisibile") {
+                    this.buttonImage = "imageYes";
+                    this.imageNo = "imageYes";
+                    this.buttonImageText = "Hide image";
+                } else {
+                    this.buttonImage = "imageYes";
+                    this.imageNo = "immagineNonVisibile";
+                    this.buttonImageText = "View Image";
                 }
             }
         },
