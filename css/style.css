@@ -1,0 +1,27 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#app  {
+    margin: 40px auto;
+    border: 2px solid black;
+    width: 400px;
+    height: 200px;
+    background-color: royalblue;
+    text-align: center;
+}
+
+input, h1, button {
+    margin-top: 30px;
+}
+
+.textNoColor {
+    color: white;
+}
+
+.textWithColor {
+    color: red;
+}
